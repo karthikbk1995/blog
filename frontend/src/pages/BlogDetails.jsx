@@ -86,6 +86,7 @@ const BlogDetails = () => {
         }),
       });
       const data = await response.json();
+      console.log(data)
       setComments([...comments, data]);
       setComment("");
     }
